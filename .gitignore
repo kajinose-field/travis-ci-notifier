@@ -1,4 +1,4 @@
 # Ignore node_module
-/node_module
+node_module/
 # Ignore editor conf files
 /.vscode
