@@ -1,0 +1,11 @@
+{
+  "name": "ci-notifier",
+  "version": "1.0.0",
+  "description": "notify travis ci build status in google home ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Itinose",
+  "license": "MIT"
+}
