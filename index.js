@@ -26,10 +26,10 @@ var travis = new Travis({
 //  ３０分おきに実行する. 非同期処理はミリ秒
 setInterval(function(){
     travis.repos(githubName, syncRepository).get(function (err, res) {
-        build_status = res.repo.last_build_state;
-        build_duration = res.repo.last_build_duration;
-        tellBuildStatus(build_status,syncRepository,build_duration);
-    });
+        build_status = res.repo.last_build_state
+        build_duration = res.repo.last_build_duration
+        tellBuildStatus(build_status,syncRepository,build_duration)
+    })
 },minute * 30)
 
 function tellBuildStatus(status,name,duration){
