@@ -18,8 +18,8 @@ function speakHome(text){
     })
 }
 
-var Travis = require('travis-ci');
-var travis = new Travis({
+const Travis = require('travis-ci')
+const travis = new Travis({
     version: '2.0.0'
 })
 
