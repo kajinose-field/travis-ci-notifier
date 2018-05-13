@@ -29,7 +29,7 @@ function getJSONArray(res){
     get_build_state(array)
 }
 travis.repos('ItinoseSan', 'check-hub').get(function (err, res) {
-    console.log(res.repo.slug);
+    console.log(res);
 });
 function get_build_state(array){
     console.log("Travis-CI build check result\n")

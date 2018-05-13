@@ -1,10 +1,14 @@
+const deviceName = process.env.DEVICE_NAME
+const ip = process.env.DEVICE_IP
+const lang = process.env.LANG
+
 const notifier = require('google-home-notifier');
-notifier.device('device name') 
-notifier.ip('your google home ip')
-notifier.language('ja');
+notifier.device(deviceName) 
+notifier.ip(ip)
+notifier.language(lang);
 
 function speakHome(text){
-    googlehome.notify(text, function(res) {
+    notifier.notify(text, function(res) {
         console.log(res)
      })
 }
